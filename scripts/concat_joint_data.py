@@ -119,12 +119,17 @@ if __name__ == '__main__':
     split = sys.argv[5]
     lang_pair_list = []
 
+    lang_pair_list.append(['kn', 'ta'])
+    #lang_pair_list.append(['hi', 'kn'])
+
+    '''
+
     if src_lang == 'en':
         for lang in LANGS:
             lang_pair_list.append(['en', lang])
     else:
         for lang in LANGS:
             lang_pair_list.append([lang, 'en'])
+    '''
 
     concat_data(in_dir, out_dir, lang_pair_list, split=split)
-
